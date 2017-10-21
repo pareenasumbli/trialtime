@@ -1,42 +1,23 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import 'expo';
+import {StyleSheet, View, Image} from 'react-native';
 
-export default class App extends React.Component {
+export default class Login extends Component {
   render() {
-    var user = {
-      mood: ["sad", "bad"]
-    }
-
-    var moods = ["test", "bad"]
-
-    var message;
-
-    if (user.mood[1] === "bad") {
-      message = (<Text style={styles.red}>happy</Text>);
-    } else {
-      message = <Text style={styles.red}>Not happy</Text>;
-    }
-
-    return (
+    return(
       <View style={styles.container}>
-{message}
-
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-
+        <View style={styles.logoContainer}>  </View>
+        <View style={styles.formContainer}></View>
       </View>
-    );
+
+    )
   }
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  red: {
-    color: "red"
+    backgroundColor: "red"
   }
-});
+})
