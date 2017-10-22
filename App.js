@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -34,14 +35,29 @@ export default class Profile extends Component {
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
+=======
+import React, {Component} from 'react';
+import 'expo';
+import {StyleSheet, View, Image} from 'react-native';
+
+export default class Login extends Component {
+  render() {
+    return(
+      <View style={styles.container}>
+        <View style={styles.logoContainer}>  </View>
+        <View style={styles.formContainer}></View>
+>>>>>>> origin/master
       </View>
-    );
+
+    )
   }
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+<<<<<<< HEAD
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
@@ -57,3 +73,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+=======
+    backgroundColor: "red"
+  }
+})
+>>>>>>> origin/master
